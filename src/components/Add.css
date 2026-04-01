@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+.add{
+  width: 100%;
+  max-width:594px;
+  height: 38px;
+  display: flex;
+  margin:0 auto;
+  gap: 12px;
+  opacity: 1;
+  align-items: center;
+  padding:0px 20px;
+}
+
+
+
+.input {
+  flex:1;
+  height: 38px;
+  padding: 9px 13px;
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+/* Placeholder */
+.input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Focus state */
+.input:focus {
+  border-color: #6B7280;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Error state */
+.input.error {
+  border-color: #EF4444;
+}
+
+/* Error + focus */
+.input.error:focus {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+/* Disabled state */
+.input:disabled {
+  background-color: #F3F4F6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Base button */
+.btn {
+  height: 38px;
+  padding: 9px 17px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  transition: all 0.2s ease;
+  
+}
+
+/* Primary style */
+.btn-primary {
+  background-color: #141413;
+  color: white;
+}
+
+/* Hover */
+.btn-primary:hover {
+  background-color: #2A2A28;
+}
+
+/* Active */
+.btn-primary:active {
+  background-color: #0F0F0E;
+}
+
+/* Disabled */
+.btn:disabled {
+  background-color: #9CA3AF;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
