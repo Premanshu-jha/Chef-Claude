@@ -3,8 +3,7 @@
 }
 
 .add{
-  width: 100%;
-  max-width:594px;
+  width: 700px;
   height: 38px;
   display: flex;
   margin:0 auto;
@@ -14,10 +13,42 @@
   padding:0px 20px;
 }
 
+.addCon{
+  display:flex;
+  flex-direction: column;
+  gap:40px;
+}
 
+li{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .add {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .add {
+    width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add {
+    width: 400px;
+  }
+}
+
+@media (max-width: 360px) {
+  .add {
+    width: 300px;
+  }
+}
 
 .input {
-  flex:1;
+  flex:0 1 399px;
   height: 38px;
   padding: 9px 13px;
   border-radius: 6px;
@@ -31,6 +62,7 @@
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   
 }
+
 
 /* Placeholder */
 .input::placeholder {
