@@ -1,0 +1,50 @@
+.listItem{
+    display:flex;
+    align-items: center;
+}
+ul {
+  margin-top: 16px;   /* 👈 THIS is missing */
+  padding-left: 20px;
+}
+
+.itemName{
+   font-size:20px;
+   font-family: 'Inter', sans-serif;
+}
+
+.title{
+   font-size:40px;
+   font-family: 'Inter', sans-serif; 
+   font-weight:600;
+
+}
+
+.listCon{
+    padding:0px 20px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.delete-btn:hover {
+  background-color: #FEE2E2;  /* light red */
+}
+
+.delete-btn:hover svg {
+  stroke: #DC2626;            /* red icon */
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
