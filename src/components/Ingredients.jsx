@@ -9,7 +9,7 @@ export default function Ingredients({list,handleDelete}){
     <ul>
     {
     list.map((item)=>{
-        return <li key={item.id} className="listCon">
+        return <li key={item.id}>
             <div className="listItem">
             <span className="itemName">{item.value}</span>
             <button className="delete-btn" onClick={()=>handleDelete(item.id)}>

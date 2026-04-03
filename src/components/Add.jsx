@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Add.css'
 import Ingredients from './Ingredients';
+import Generate from './Generate';
 
 export default function Add(){
     let [list,setList] = useState([]);
@@ -25,8 +26,9 @@ export default function Add(){
           <input type="text" placeholder="e.g. oregano" className="input" value={ingredient} onChange={event=>setIngredient(event.target.value)}/>
           <button className="btn btn-primary btn-base" onClick={()=>handleAddition(ingredient)}>+ Add Ingredient</button>
         </div>
-        <div>
-            <Ingredients list={list} handleDelete={handleDelete}/>
+        <div className="recipe">
+        <Ingredients list={list} handleDelete={handleDelete}/>
+        {list.length>0 && <Generate list={list}/>}
         </div>
         </div>
     )
