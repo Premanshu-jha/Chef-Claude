@@ -17,15 +17,26 @@
   display:flex;
   flex-direction: column;
   gap:40px;
+  padding:0px 20px;
 }
 
 li{
   margin-bottom: 20px;
 }
 
+.recipe{
+  display:flex;
+  flex-direction:column;
+  width:700px;
+  justify-content: flex-start;
+}
+
 @media (max-width: 768px) {
   .add {
     width: 600px;
+  }
+  .recipe{
+    width:600px;
   }
 }
 
@@ -33,17 +44,26 @@ li{
   .add {
     width: 500px;
   }
+   .recipe{
+    width:500px;
+  }
 }
 
 @media (max-width: 480px) {
   .add {
     width: 400px;
   }
+   .recipe{
+    width:400px;
+  }
 }
 
 @media (max-width: 360px) {
   .add {
     width: 300px;
+  }
+   .recipe{
+    width:300px;
   }
 }
 
